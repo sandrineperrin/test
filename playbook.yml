@@ -23,6 +23,6 @@
 
   tasks:
   - import_role:
-    name: rrey.my_collection.idiot
+      name: rrey.my_collection.idiot
 
    
