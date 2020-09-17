@@ -1,7 +1,29 @@
+---
 - hosts: localhost
   connection: local
+  gather_facts: false
   
   tasks:
   
   - name: Hello
     ping:
+
+- name: "Test roles"
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  
+  roles:
+  - role: geerlingguy.java
+  
+- name: "Test collection"
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  
+  roles:
+  - yatesr.timezone
+
+  vars:
+   timezone: America/New_York
+   
