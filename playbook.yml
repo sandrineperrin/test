@@ -20,10 +20,9 @@
   hosts: localhost
   connection: local
   gather_facts: false
-  
-  roles:
-  - yatesr.timezone
 
-  vars:
-   timezone: America/New_York
+  tasks:
+  - import_role:
+    name: rrey.my_collection.idiot
+
    
