@@ -32,16 +32,16 @@
 #  roles:
 #  - role: geerlingguy.java
   
-- name: "Test collection"
-  hosts: localhost
-  connection: local
-  gather_facts: false
-
-  collections:
-    - geerlingguy.php_roles
-
-  roles:
-    - role: php-versions
-      vars:
-        php_version: '7.3'
+# - name: "Test collection"
+#   hosts: localhost
+#   connection: local
+#   gather_facts: false
+# 
+#   collections:
+#     - geerlingguy.php_roles
+# 
+#   roles:
+#     - role: php-versions
+#       vars:
+#         php_version: '7.3'
 
