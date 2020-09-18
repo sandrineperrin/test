@@ -16,13 +16,13 @@
   roles:
   - role: geerlingguy.java
   
-- name: "Test collection"
-  hosts: localhost
-  connection: local
-  gather_facts: false
-
-  tasks:
-  - import_role:
-      name: rrey.my_collection.idiot
+# - name: "Test collection"
+#   hosts: localhost
+#   connection: local
+#   gather_facts: false
+# 
+#   tasks:
+#   - import_role:
+#       name: rrey.my_collection.idiot
 
    
