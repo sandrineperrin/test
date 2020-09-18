@@ -13,17 +13,25 @@
   hosts: localhost
   connection: local
   gather_facts: false
-  
+
+  pre_tasks:
+  - pause:
+      minutes: 3
+
   roles:
   - role: geerlingguy.java
   
-- name: "Test collection"
-  hosts: localhost
-  connection: local
-  gather_facts: false
-
-  tasks:
-  - import_role:
-      name: rrey.my_collection.idiot
-
-   
+# - name: "Test collection"
+#   hosts: localhost
+#   connection: local
+#   gather_facts: false
+# 
+#   collections:
+#     - geerlingguy.php_roles
+# 
+#   roles:
+#     - php
+#     - role: php-versions
+#       vars:
+#         php_version: '7.3'
+# 
