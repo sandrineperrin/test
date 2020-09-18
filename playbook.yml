@@ -15,6 +15,12 @@
   gather_facts: false
 
   pre_tasks:
+
+  - command: "ansible --version"
+    register: ansible_output
+
+  - debug: var=ansible_output
+
   - pause:
       minutes: 3
 
