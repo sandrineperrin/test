@@ -10,7 +10,7 @@
     ping:
     
   - debug:
-      var:
+      var: item
     loop:
     - "{{ list_manual }}"
     - "{{ list_manual_area }}"
