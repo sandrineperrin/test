@@ -8,6 +8,13 @@
   
   - name: Hello
     ping:
+    
+  - debug:
+      var:
+    loop:
+    - "{{ list_manual }}"
+    - "{{ list_manual_area }}"
+    
 
 - name: "Test roles"
   hosts: localhost
@@ -26,20 +33,4 @@
 
   - debug: var=env_output
 
-  - pause:
-      minutes: 3
-
-#  roles:
-#  - role: geerlingguy.java
-  
-- name: "Test collection"
-  hosts: localhost
-  connection: local
-  gather_facts: false
-
-  collections:
-    - geerlingguy.php_roles
-
-  roles:
-    - role: php
 
