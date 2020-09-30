@@ -19,6 +19,9 @@
       var: hostvars[inventory_hostname]
   - debug:
       msg: "{{ lookup('env', 'ANSIBLE_NET_USERNAME')}} - {{ lookup('env', 'ANSIBLE_NET_PASSWORD')}}"
+      
+  - debug:
+      var: my_secret_message
 
 - name: "Test roles"
   hosts: localhost
