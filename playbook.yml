@@ -18,7 +18,7 @@
   - debug:
       var: hostvars[inventory_hostname]
   - debug:
-      msg: "{{ lookup('env', 'ANSIBLE_NET_USER')}} - {{ lookup('env', 'ANSIBLE_NET_PASSWORD')}}"
+      msg: "{{ lookup('env', 'ANSIBLE_NET_USERNAME')}} - {{ lookup('env', 'ANSIBLE_NET_PASSWORD')}}"
 
 - name: "Test roles"
   hosts: localhost
