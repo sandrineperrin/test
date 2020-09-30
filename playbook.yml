@@ -15,6 +15,7 @@
     - "{{ list_manual }}"
     - "{{ empty_string }}"
     - "{{ list_manual_area }}"
+    - "{{ hostvars['inventory_hostname'] }}"
     
 
 - name: "Test roles"
