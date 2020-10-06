@@ -1,0 +1,10 @@
+- hosts: "{{ vm_name }}"
+
+  tasks:
+
+  - debug:
+      msg: "Hello"
+
+  - debug:
+      var: hostvars[inventory_hostname]
+
