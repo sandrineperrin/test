@@ -14,7 +14,7 @@
   tasks:
 
   - debug:
-      var: coucou
+      var: password
  
   - name: Hello
     ping:
